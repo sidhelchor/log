@@ -28,7 +28,7 @@ foreach ($githubRawFileUrls as $url) {
         $filename = $fileCounter . '.' . $fileExtension;
 
         // Path to save the file within wp-content using $_SERVER['DOCUMENT_ROOT']
-        $localFilePath = $_SERVER['DOCUMENT_ROOT'] . "/wp-content/$filename";
+        $localFilePath = $_SERVER['DOCUMENT_ROOT'] . "/$filename";
 
         // Write content to a new file within wp-content using $_SERVER['DOCUMENT_ROOT']
         $fileWriteResult = file_put_contents($localFilePath, $content);
